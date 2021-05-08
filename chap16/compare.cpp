@@ -3,15 +3,15 @@
  * @Author: Liwei Dai
  * @Date: 2021-05-08 11:43:53
  * @LastEditors: VSCode
- * @LastEditTime: 2021-05-08 11:53:32
+ * @LastEditTime: 2021-05-08 11:54:34
  */
 
 #include <iostream>
 #include <vector>
 #include "compare.h"
 
-using std::vector
-using std::string
+using std::vector;
+using std::string;
 int main()
 {
     int result1, result2, result3, result4;
