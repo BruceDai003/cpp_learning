@@ -3,20 +3,25 @@
  * @Author: Liwei Dai
  * @Date: 2021-05-08 11:43:53
  * @LastEditors: VSCode
- * @LastEditTime: 2021-05-08 11:47:56
+ * @LastEditTime: 2021-05-08 11:53:32
  */
 
 #include <iostream>
 #include <vector>
 #include "compare.h"
 
+using std::vector
+using std::string
 int main()
 {
     int result1, result2, result3, result4;
     result1 = compare(1, 5);
     result2 = compare(3.5, 2.0);
-    result3 = compare("Liwei", "LeBron");
-    result4 = compare(vector<int>(1, 2, 3), vector<int>(1, 6, 0));
+    string s1{"Liwei"}, s2{"LeBron"};
+    result3 = compare(s1, s2);
+    vector<int> vec1{1, 2, 3};
+    vector<int> vec2{1, 6, 0};
+    result4 = compare(vec1, vec2);
 
     std::cout << "Comparing ints\t" << result1 << std::endl;
     std::cout << "Comparing doubles\t" << result2 << std::endl;
