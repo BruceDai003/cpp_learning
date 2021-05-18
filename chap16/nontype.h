@@ -3,7 +3,7 @@
  * @Author: Liwei Dai
  * @Date: 2021-05-18 14:54:24
  * @LastEditors: VSCode
- * @LastEditTime: 2021-05-18 14:56:47
+ * @LastEditTime: 2021-05-18 15:08:50
  */
 #pragma once
 #include <string>
@@ -17,6 +17,6 @@ void f()
 template <std::string &temp> // reference to obejct
 void g()
 {
-    std::cout << temp << endl;
-    temp += "... appended some string."
+    std::cout << temp << std::endl;
+    temp += "... appended some string.";
 }
