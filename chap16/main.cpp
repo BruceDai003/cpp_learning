@@ -3,16 +3,21 @@
  * @Author: Liwei Dai
  * @Date: 2021-05-08 14:54:27
  * @LastEditors: VSCode
- * @LastEditTime: 2021-05-08 14:55:46
+ * @LastEditTime: 2021-05-18 15:06:36
  */
 #include <iostream>
 #include <vector>
 #include "compare.h"
+#include "nontype.h"
 
 using std::vector;
 using std::string;
-int main()
+
+void decorate_func()
+
+void test_compare()
 {
+    std::cout << "Now testing function template compare" << std::endl;
     int result1, result2, result3, result4;
     result1 = compare(1, 5);
     result2 = compare(3.5, 2.0);
@@ -26,5 +31,23 @@ int main()
     std::cout << "Comparing doubles\t" << result2 << std::endl;
     std::cout << "Comparing strings\t" << result3 << std::endl;
     std::cout << "Comparing vectors\t" << result4 << std::endl;
+    std::cout << std::string(20, '=') << std::endl;
+}
+
+void test_nontype()
+{
+    std::cout << "Now testing none-type template parameters" << std::endl;  
+    std::string s{"can assign values locally"};
+    f<&s>();
+    g<s>();
+    std::cout << s << std::endl;
+    std::cout << std::string(20, '=') << std::endl;
+}
+
+int main()
+{
+    test_compare();
+    test_nontype();
+    
     
 }
