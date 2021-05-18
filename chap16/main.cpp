@@ -3,7 +3,7 @@
  * @Author: Liwei Dai
  * @Date: 2021-05-08 14:54:27
  * @LastEditors: VSCode
- * @LastEditTime: 2021-05-18 15:10:27
+ * @LastEditTime: 2021-05-18 15:12:38
  */
 #include <iostream>
 #include <vector>
@@ -32,10 +32,12 @@ void test_compare()
     std::cout << std::string(20, '=') << std::endl;
 }
 
+std::string s{"can assign values locally"};
+
 void test_nontype()
 {
     std::cout << "Now testing none-type template parameters" << std::endl;  
-    std::string s{"can assign values locally"};
+    
     f<&s>();
     g<s>();
     std::cout << s << std::endl;
