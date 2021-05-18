@@ -3,7 +3,7 @@
  * @Author: Liwei Dai
  * @Date: 2021-05-08 14:54:27
  * @LastEditors: VSCode
- * @LastEditTime: 2021-05-18 15:06:36
+ * @LastEditTime: 2021-05-18 15:10:27
  */
 #include <iostream>
 #include <vector>
@@ -12,8 +12,6 @@
 
 using std::vector;
 using std::string;
-
-void decorate_func()
 
 void test_compare()
 {
